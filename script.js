@@ -29,8 +29,16 @@ function renderGrid(width) {
 
 function draw(e) {
     if (e.target.classList.contains("square")) {
-        e.target.style.backgroundColor = "black";
+        //e.target.style.backgroundColor = "black";
+        let red = getRandomValue();
+        let green = getRandomValue();
+        let blue = getRandomValue();
+        e.target.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`
     }
+}
+
+function getRandomValue() {
+    return Math.floor(Math.random() * 255) + 1;
 }
 
 renderGrid(width);
