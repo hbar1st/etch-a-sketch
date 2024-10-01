@@ -53,6 +53,10 @@ main div div {
     border: 1px solid black;
 }
 
+div.square.layer {
+    transform: translateX(-100%);
+}
+
 @media only screen and (max-width: 400) {
     main > div {
         width: 320px;
