@@ -47,19 +47,13 @@ main > div {
 
 main div div {
     flex: 1 1 auto;
- /*   width: clamp(20px, 4vw, 6vw);*/
-    
     aspect-ratio: 1;
     border: 1px solid black;
 }
 
-div.square.layer {
-    transform: translateX(-100%);
-}
-
 @media only screen and (max-width: 400) {
     main > div {
-        width: 320px;
-        height: 20px
+        max-width: 320px;
+        height: 15px
     }
 }
