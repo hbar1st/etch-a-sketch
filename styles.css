@@ -7,15 +7,29 @@
 body {
     max-height: 100dvh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0;
 }
 
+button {
+    padding: 1rem;
+    font-size: larger;
+    font-weight: 700;
+    background: linear-gradient(22deg, rgba(168, 72, 172, 0.848), purple);
+    color: white;
+    border-radius: 2px;
+}
+span {
+    font-weight: 800;
+    font-size: larger;
+    padding: 1rem;
+}
 main {
     flex: 1 1 auto;
     flex-direction: column;
-    border: 2px solid blue;
+    border: 3px double purple;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,11 +42,20 @@ main > div {
     justify-content: center;
     align-items: center;
     flex: 0 0 auto;
+    width: 660px;
 }
 
 main div div {
     flex: 1 1 auto;
-    width: clamp(20px, 4vw, 6vw);
+ /*   width: clamp(20px, 4vw, 6vw);*/
+    
     aspect-ratio: 1;
     border: 1px solid black;
+}
+
+@media only screen and (max-width: 330) {
+    main > div {
+        width: 320px;
+        height: 20px
+    }
 }
