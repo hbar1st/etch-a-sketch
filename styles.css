@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+main {
+    flex: 1 1 auto;
+    flex-direction: column;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    gap: 0;
+}
+
+main > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+main div div {
+    flex: 1 1 auto;
+    width: clamp(20px, 4vw, 6vw);
+    aspect-ratio: 1;
+    border: 1px solid black;
+}
